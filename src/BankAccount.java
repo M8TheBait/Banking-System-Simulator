@@ -11,4 +11,7 @@ public class BankAccount {
             this.balance = balance;
         }
     }
+    public void deposit(double deposit){
+        this.balance += deposit;
+    }
 }

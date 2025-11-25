@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String args){
+    public static void main(String[] args){
         /*
     Design and implement Java classes to represent bank accounts and transactions.
     Utilize constructors and methods to initialize and manipulate account data.
@@ -8,6 +8,9 @@ public class Main {
     Create a custom toString() method for informative output of account details.
          */
 
-
+        BankAccount first = new BankAccount("Oskar Andersson", 1500);
+        System.out.println(first.balance);
+        first.deposit(500);
+        System.out.println(first.balance);
     }
 }
