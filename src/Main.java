@@ -12,5 +12,8 @@ public class Main {
         System.out.println(first.balance);
         first.deposit(500);
         System.out.println(first.balance);
+
+        first.withdraw(250);
+        System.out.println(first.balance);
     }
 }

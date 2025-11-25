@@ -14,4 +14,7 @@ public class BankAccount {
     public void deposit(double deposit){
         this.balance += deposit;
     }
+    public void withdraw(double withdraw){
+        this.balance -= withdraw;
+    }
 }
