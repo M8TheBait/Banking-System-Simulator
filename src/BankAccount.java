@@ -27,4 +27,14 @@ public class BankAccount {
             this.balance -= withdraw;
         }
     }
+    public void transfer(BankAccount trans, double amount){
+        if(amount < 0 || amount > this.balance){
+            System.out.println("Invalid amount!");
+        }
+        else{
+            this.balance -= amount;
+            trans.balance += amount;
+            System.out.printf("You transferred %.2f to %s", amount, trans.accountName);
+        }
+    }
 }

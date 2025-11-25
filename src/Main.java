@@ -8,12 +8,9 @@ public class Main {
     Create a custom toString() method for informative output of account details.
          */
 
-        BankAccount first = new BankAccount("Oskar Andersson", 1500);
-        System.out.println(first.balance);
-        first.deposit(500);
-        System.out.println(first.balance);
+        BankAccount first = new BankAccount("Harry Potter", 1000);
+        BankAccount second = new BankAccount("Draco Malfoy", 3000);
 
-        first.withdraw(250);
-        System.out.println(first.balance);
+        second.transfer(first, 1000);
     }
 }
