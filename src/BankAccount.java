@@ -12,9 +12,19 @@ public class BankAccount {
         }
     }
     public void deposit(double deposit){
-        this.balance += deposit;
+        if(deposit < 0){
+            System.out.println("Invalid amount, try again");
+        }
+        else{
+            this.balance += deposit;
+        }
     }
     public void withdraw(double withdraw){
-        this.balance -= withdraw;
+        if(withdraw < 0 || withdraw > this.balance){
+            System.out.println("Invalid amount, try again");
+        }
+        else{
+            this.balance -= withdraw;
+        }
     }
 }
