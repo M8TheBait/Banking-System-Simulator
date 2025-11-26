@@ -12,7 +12,7 @@ public class Bank{
                 break;
             }
         }
-        if(duplicate == false){
+        if(!duplicate){
             BankAccount newAccount = new BankAccount(newAccountName, balance);
             accounts.add(newAccount); // Adds account to the arraylist at the bank
             System.out.printf("Your Bank account: %s has been created \n", newAccountName);
@@ -27,7 +27,7 @@ public class Bank{
                 break;
             }
         }
-        if(duplicate == false){
+        if(!duplicate){
             accounts.add(currentAccount);
             System.out.printf("Your Bank account: %s has been created \n", currentAccount.accountName);
         }

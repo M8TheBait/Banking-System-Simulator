@@ -7,16 +7,16 @@ public class Main {
     Use Java’s built-in classes to manage collections of accounts and transactions.
     Create a custom toString() method for informative output of account details.
          */
-
-        BankAccount first = new BankAccount("Lilly Potter", 1000);
+        BankAccount first = new BankAccount("Harry Potter", 1000);
         BankAccount second = new BankAccount("Draco Malfoy", 3000);
-        Bank handelsbanken = new Bank();
+        BankAccount third = new BankAccount("Tom Ridde", 5000);
+        Bank gringotts = new Bank();
 
-        handelsbanken.addBankAccount("Cedric Diggory", 5000);
-        handelsbanken.addExistingAccount(first);
-        handelsbanken.addExistingAccount(second);
+        gringotts.addExistingAccount(first);
+        gringotts.addExistingAccount(second);
+        gringotts.addExistingAccount(third);
+        gringotts.addBankAccount("Cedric Diggory", 5000);
 
-        System.out.println("\n" + handelsbanken.toString());
-
+        System.out.println(gringotts.toString());
     }
 }

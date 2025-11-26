@@ -1,9 +1,13 @@
 public class BankAccount {
    String accountName;
    private double balance;
+   private static int id = 1;
+   private int accountId;
 
     public BankAccount(String accountName, double balance){
         this.accountName = accountName;
+        this.accountId = id;
+        id++;
         if(balance < 0) {
             this.balance = 0;
         }
@@ -39,6 +43,6 @@ public class BankAccount {
     }
     @Override
     public String toString(){
-        return "Account Name: " + accountName + ", Balance: €" + balance;
+        return "ID: " + accountId + ", Account Name: " + accountName + ", Balance: €" + balance;
     }
 }
