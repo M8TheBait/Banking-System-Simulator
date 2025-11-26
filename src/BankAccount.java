@@ -37,4 +37,8 @@ public class BankAccount {
             System.out.printf("You transferred €%.2f to %s\n", amount, trans.accountName);
         }
     }
+    @Override
+    public String toString(){
+        return "Account Name: " + accountName + ", Balance: €" + balance;
+    }
 }

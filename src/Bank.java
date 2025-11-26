@@ -32,7 +32,12 @@ public class Bank{
             System.out.printf("Your Bank account: %s has been created \n", currentAccount.accountName);
         }
     }
+    @Override
     public String toString(){
-        return "hello";
+        String list = "";
+        for(BankAccount account : accounts){
+            list += account.toString() + "\n";
+        }
+        return list;
     }
 }

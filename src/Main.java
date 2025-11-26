@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args){
         /*
@@ -16,6 +14,9 @@ public class Main {
 
         handelsbanken.addBankAccount("Cedric Diggory", 5000);
         handelsbanken.addExistingAccount(first);
+        handelsbanken.addExistingAccount(second);
+
+        System.out.println("\n" + handelsbanken.toString());
 
     }
 }
