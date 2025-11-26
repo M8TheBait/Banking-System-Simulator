@@ -1,6 +1,6 @@
 public class BankAccount {
-    String accountName;
-    double balance;
+   String accountName;
+   private double balance;
 
     public BankAccount(String accountName, double balance){
         this.accountName = accountName;
@@ -34,7 +34,7 @@ public class BankAccount {
         else{
             this.balance -= amount;
             trans.balance += amount;
-            System.out.printf("You transferred %.2f to %s", amount, trans.accountName);
+            System.out.printf("You transferred €%.2f to %s\n", amount, trans.accountName);
         }
     }
 }

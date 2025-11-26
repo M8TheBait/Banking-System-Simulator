@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args){
         /*
@@ -8,9 +10,12 @@ public class Main {
     Create a custom toString() method for informative output of account details.
          */
 
-        BankAccount first = new BankAccount("Harry Potter", 1000);
+        BankAccount first = new BankAccount("Lilly Potter", 1000);
         BankAccount second = new BankAccount("Draco Malfoy", 3000);
+        Bank handelsbanken = new Bank();
 
-        second.transfer(first, 1000);
+        handelsbanken.addBankAccount("Cedric Diggory", 5000);
+        handelsbanken.addExistingAccount(first);
+
     }
 }
