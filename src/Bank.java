@@ -3,6 +3,8 @@ public class Bank{
     boolean duplicate;
     ArrayList <BankAccount> accounts = new ArrayList<>();
 
+    //Return a Bank account instead
+    //public BankAccount addBankAccount(String NewAccountName, double balance){
     public void addBankAccount(String newAccountName, double balance){
         duplicate = false;
         for(BankAccount account : accounts){
